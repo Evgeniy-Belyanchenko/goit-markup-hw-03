@@ -22,8 +22,22 @@ button {
   font-family: Roboto, sans-serif;
 }
 
-ul {
+.list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+/* Контейнер */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
 }
 
 a {
@@ -58,6 +72,13 @@ a {
   color: #2196f3;
 }
 
+.nav,
+.site-nav,
+.contact {
+  display: flex;
+  align-items: center;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contacts:hover,
@@ -81,29 +102,28 @@ a {
 
 /* Герой */
 .hero {
-  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--color-white);
 }
 
 .hero-btn {
   background-color: var(--accent-color);
   color: var(--color-white);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-
   display: flex;
   align-items: center;
   text-align: center;
@@ -111,7 +131,18 @@ a {
 }
 
 /* Секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.doing {
+  padding-top: 0px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -120,6 +151,8 @@ a {
 }
 
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -128,34 +161,43 @@ a {
 }
 
 .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
-
   letter-spacing: 0.03em;
-
   color: var(--title-text-color);
 }
 
 .team-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.18;
-
   color: var(--title-text-color);
 }
 
 /* Подвал */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
 .logo-footer {
   color: var(--color-white);
+}
+
+.foot {
+  margin-bottom: 20px;
 }
 
 .address {
