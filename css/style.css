@@ -45,6 +45,12 @@ button {
   list-style: none;
 }
 
+/* Секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Контейнер */
 
 .container {
@@ -54,11 +60,16 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+
+/* Шапка */
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* Лого */
-.logo {
+.logo-header {
   margin-right: 93px;
 
   font-family: Raleway, sans-serif;
@@ -144,6 +155,8 @@ button {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -170,17 +183,43 @@ button {
   letter-spacing: 0.06em;
 }
 
-/* Секции */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/* Особенности */
+.feature-list {
+  display: flex;
 }
 
-.doing {
+.feature-list .feature-iteam:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+/* Чем мы занимаемся */
+.engage {
   padding-top: 0px;
 }
 
-.section-title {
+.engage-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -190,25 +229,15 @@ button {
   letter-spacing: 0.03em;
 }
 
-.subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.engage-list {
+  display: flex;
 }
 
-.section-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+.engage-list .engage-item:not(:last-child) {
+  margin-right: 30px;
 }
 
+/* Наша команда */
 .team-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -226,6 +255,7 @@ button {
 }
 
 /* Подвал */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -236,12 +266,24 @@ button {
   color: var(--color-white);
 }
 
-.foot {
+.logo-foot {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  display: block;
   margin-bottom: 20px;
 }
 
 .address {
   font-style: normal;
+}
+
+.footer-item {
+  margin-bottom: 9px;
 }
 
 .city {
