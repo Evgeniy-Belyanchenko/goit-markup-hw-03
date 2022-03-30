@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--color-white);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
@@ -21,6 +21,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  background-color: red;
 }
 
 h1,
@@ -266,7 +271,6 @@ button {
 
 .team-item {
   width: 270px;
-  height: 368px;
 
   background: #ffffff;
 
@@ -393,18 +397,18 @@ button {
 
 .work-item {
   width: 370px;
-  height: 404px;
 
   margin-right: 30px;
   margin-bottom: 30px;
 
   background: var(--color-white);
-  border-bottom: 1px solid #eeeeee;
+
   box-sizing: border-box;
 }
 
-.work-img {
-  margin-bottom: 20px;
+.work-border {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .work-title {
