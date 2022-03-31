@@ -200,6 +200,10 @@ button {
   display: flex;
 }
 
+.feature-iteam {
+  width: 270px;
+}
+
 .feature-list .feature-iteam:not(:last-child) {
   margin-right: 30px;
 }
@@ -279,8 +283,10 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-link {
-  margin-bottom: 30px;
+
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list-title {
@@ -292,7 +298,6 @@ button {
 }
 
 .team-text {
-  padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
