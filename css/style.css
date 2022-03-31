@@ -25,7 +25,8 @@ a {
 
 img {
   display: block;
-  background-color: red;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -177,7 +178,6 @@ button {
 }
 
 .hero-btn {
-  padding: 10px 32px;
 
   min-width: 200px;
   height: 50px;
@@ -369,8 +369,8 @@ button {
 }
 
 .work-btn {
-  min-width: 73px;
-  height: 38px;
+  /* min-width: 73px;
+  height: 38px; */
 
   padding: 6px 22px;
 
